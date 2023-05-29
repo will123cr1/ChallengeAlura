@@ -1,0 +1,338 @@
+* {
+    margin:0 ;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+   
+    height: 100vh;
+    background-image: url(Imagenes/coloresfondo.jpg);
+    width: 106.6vw;
+}
+.titulo{
+    position: absolute;
+    left: 12%;
+    top: 5%;
+    font-family: "'Poppins', sans-serif";
+    color: rgb(3, 37, 37);
+
+
+
+}
+.texto{
+    position: absolute;
+    width: 45%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "'Poppins', sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border-radius: 10px;
+    background-color: azure;
+    box-shadow: 0px 24px 32px -8px rgb(100, 99, 99);
+}
+
+.texto::placeholder{
+   color: rgb(56, 36, 94);
+
+}
+.texto:focus,
+.texto:active{
+    border: none;
+    outline: none;
+}
+
+.terminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+.terminos p{
+    font-family: "'Poppins', sans-serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgb(18, 19, 18);
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-bottom: 24px;
+ 
+
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+}
+
+.btn-encriptar {
+   align-items: center;
+   justify-content: center;
+   padding: 2%;
+   gap: 8px;
+   width: 20%;
+  background-color: rgb(51, 142, 226);
+  border: 1px solid rgb(242, 243, 239);
+  border-radius:  24px;
+  font-family: "'Poppins', sans-serif";
+  font-size: 22px;
+  line-height: 19px;
+  text-align: center;
+  color: aliceblue;
+  margin-right: 1%;
+  box-shadow: 0px 24px 32px -8px rgb(0, 0, 0.10);
+
+
+}
+
+.btn-desencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 20%;
+    background-color: rgb(16, 75, 109) ;
+    border: 1px solid rgb(242, 243, 239);
+    border-radius: 24px;
+    font-family: "'Poppins', sans-serif";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    text-align: center;
+    color: rgb(251, 252, 251);
+    box-shadow: 0px 24px 32px -8px rgb(0, 0, 0.10);
+
+}
+
+.btn-desencriptar:hover,
+.btn-encriptar:hover{
+    margin: 0.3%;
+    width: 20.5%;
+    padding: 1.8%;
+    font-size: 22.4px;
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height:90%;
+    left: 60%;
+    top: 5%;
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px rgb(0, 0, 0.10);
+    border-radius: 32px;
+
+}
+
+.mensaje-encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    text-align: center;
+
+}
+
+.mensaje-encriptado h2{
+    width: 60%;
+    font-family: "'Poppins', sans-serif";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 120%;
+    text-align: center;
+    color: rgb(22, 36, 82);
+}
+
+.mensaje-encriptado p{
+    width: 75%;
+    font-family: "'Poppins', sans-serif";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: rgb(15, 25, 66);
+
+}
+.encriptado img{
+    position: absolute;
+    width: 75%;
+    height: 65%;
+    top: 2%;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    padding:40px;
+    width: 100%;
+}
+
+
+.logo{
+    left: 30%;
+    margin:20px;
+    
+}
+.copyright{
+    color:#faf9f9;
+    font-size: 13px;
+    margin:15px;
+    
+}
+
+
+@media (max-width: 57.5em){
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+
+    }
+
+    .encriptado{
+        width: 100%;
+
+    }
+    
+    .texto{
+        width: 80%;
+        left: 10%;
+        height: 60%;
+        top: 10%;
+
+    }
+
+    .terminos{
+        width: 80%;
+        left: 10%;
+        top: 70.5%;
+    }
+
+    .terminos p{
+        font-size: 16px;
+
+    }
+
+    .botones{
+        width: 80%;
+        left: 10%;
+        top: 72.5%;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar{
+        width: 50%;
+        border-radius: 16px
+    }
+
+    .btn-encriptar:hover,
+    .btn-desencriptar:hover{
+        width: 47.5%;
+        padding: 1.8%;
+        margin: 0.4;
+    }
+
+    .encriptado{
+        width: 70%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+        
+    }
+    .parrafo{
+        font-size: 6px;
+
+
+
+    }
+    .mensaje-encriptado{
+        width: 100%;
+        top: 6%;
+        
+    }
+
+    .encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+
+
+    }
+
+    .footer{
+        width: 90%;
+
+
+    }
+
+    .logo{
+        left: 30%;
+        margin:10px;
+        
+    }
+    .copyright{
+        color:#faf9f9;
+        font-size: 13px;
+        margin:15px;
+        
+    }
+    
+
+    
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

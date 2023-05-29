@@ -5,33 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptado de texto</title>
+    <link rel="shortcut icon" href="Imagenes/icono.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
+        <div class="titulo">
+            <h1>Ecriptador de texto</h1>
+        </div>
         <div class="encriptar">
-            <textarea name="texto" id="texto" class="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+             <textarea name="texto" id="texto" class="texto" cols="30" rows="10" placeholder="   Ingrese el texto aqui..."></textarea>
       
-        <div class="terminos">
-            <p>Solo letras minusculas por favor</p>
-        </div>
-        <div class="botones">
-            <button class="btn-encriptar" type="button" onclick="encriptar()">
+            <div class="terminos">
+            <p>Solo letras minusculas por favor, muchas gracias!</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">
                 Encriptar
-            </button>
-           <input type="button" class=" btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
+                </button>
+                <input type="button" class=" btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
+                
+            </div>
         </div>
-    </div>
-    <div class="encriptado">
-        <img src="" alt="" id="muneco">
+        <div class="encriptado">
+        <img src="Imagenes/pensar.jpg" id="nino">
         <div class="mensaje-encriptado" id="mensaje-encriptado">
             <h2 id="titulo-mensaje">Ningun mejsaje encontrado</h2>
-            <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mansaje"></textarea>
+            
+        
         </div>
 
+        </div>
     </div>
-</div>
+
+    <footer>
+        <img src="Imagenes/logo.png" class="logo" >
+        <p class="copyright">&copy Copyright TextCodificator - 2020</p>
+    </footer>
     
 
 
